@@ -1,4 +1,9 @@
-# tic-tac-toe
+# Крестики-нолики на Vue 3 Composition API
+
+## Ссылка на build
+```
+https://gtikhomiroff.github.io/tic-tac-toe-vue3/dist/index.html
+```
 
 ## Project setup
 ```
