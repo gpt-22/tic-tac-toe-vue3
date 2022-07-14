@@ -1,16 +1,15 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+  <TicTacToe />
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import HelloWorld from "./components/HelloWorld.vue";
+import TicTacToe from "@/modules/tic-tac-toe/components/TicTacToe.vue";
 
 export default defineComponent({
   name: "App",
   components: {
-    HelloWorld,
+    TicTacToe,
   },
 });
 </script>
@@ -22,6 +21,6 @@ export default defineComponent({
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 40px;
 }
 </style>
