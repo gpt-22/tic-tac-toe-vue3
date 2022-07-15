@@ -2,10 +2,10 @@
 
 ## Ссылка на build
 ```
-https://gtikhomiroff.github.io/tic-tac-toe-vue3/dist/index.html
+https://gtikhomiroff.github.io/tic-tac-toe-vue3/
 ```
 
-## Project setup
+## Project setupCancel changes
 ```
 yarn install
 ```
