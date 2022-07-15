@@ -11,7 +11,7 @@
     </div>
 
     <div class="controls">
-      <button class="button" @click="restartGame">Начать заново</button>
+      <button class="button" @click="restartGame">Сбросить счет</button>
       <button class="button" @click="startGame">Новая игра</button>
       <div class="dimension-select-wrapper">
         <select v-model="dimension" class="dimension-select">
