@@ -55,7 +55,10 @@ export default defineComponent({
   setup() {
     const dimension = ref<number>(selectOptions[0].value);
     const cells = ref<Cell[]>(getInitialCells(dimension.value));
-    watch(dimension, () => (cells.value = getInitialCells(dimension.value)));
+    watch(dimension, () => {
+      cells.value = getInitialCells(dimension.value);
+      startGame();
+    });
 
     const getCellIconPath = (cellValue: null | Player) => {
       const iconName = cellValue === Player.X ? "cross" : "circle";
