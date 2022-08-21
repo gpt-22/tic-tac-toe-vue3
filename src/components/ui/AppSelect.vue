@@ -18,7 +18,7 @@ import { defineProps, defineEmits, ref, watch } from "vue";
 const props = defineProps(["options", "modelValue"]);
 const emits = defineEmits(["update:modelValue"]);
 
-const model = ref(null);
+const model = ref(props.modelValue);
 watch(model, () => {
   emits("update:modelValue", model.value);
 });
