@@ -13,7 +13,7 @@
 <script setup lang="ts">
 import { defineProps, defineEmits } from "vue";
 
-const props = defineProps({
+defineProps({
   text: {
     type: String,
     default: "",
@@ -23,34 +23,11 @@ const props = defineProps({
     default: false,
   },
 });
-
-const emits = defineEmits(["click"]);
+defineEmits(["click"]);
 </script>
 
 <style scoped lang="scss">
 @import "@/assets/styles/vars.scss";
-
-//.app-button {
-//  padding: 8px 16px;
-//  background-color: #fff;
-//  transition: 0.2s ease-in background-color;
-//
-//  &:hover {
-//    background-color: #f5f5f5;
-//  }
-//}
-
-.button {
-  border: 2px solid #dadada;
-  border-radius: 8px;
-
-  &:focus {
-    outline: 2px solid $color-primary-dark;
-  }
-  &:active {
-    outline: 2px solid $color-primary;
-  }
-}
 
 .app-button {
   padding: 8px 16px;

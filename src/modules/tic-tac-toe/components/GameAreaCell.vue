@@ -12,7 +12,7 @@
 import { Cell, Player } from "@/modules/tic-tac-toe/types";
 import { defineProps } from "vue";
 
-const props = defineProps<{
+defineProps<{
   cell: Cell;
   isWin: boolean;
 }>();

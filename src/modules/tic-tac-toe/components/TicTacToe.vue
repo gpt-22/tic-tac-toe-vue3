@@ -44,12 +44,11 @@ watch(dimension, () => {
   cells.value = getInitialCells(dimension.value);
   startGame();
 });
-
+const winner = ref<Player | null>(null);
 const isDraft = computed<boolean>(
   () => cells.value.every((cell) => cell.value) && !winner.value
 );
 
-const winner = ref<Player | null>(null);
 const gameText = computed(
   () => `Ходят ${current.value === Player.X ? "крестики" : "нолики"}`
 );
