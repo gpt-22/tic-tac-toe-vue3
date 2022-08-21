@@ -2,7 +2,7 @@
 
 ## Ссылка на build
 ```
-https://gtikhomiroff.github.io/tic-tac-toe-vue3/
+https://gtikhomiroff.github.io/tic-tac-toe-vue3/dist/
 ```
 
 ## Project setupCancel changes
