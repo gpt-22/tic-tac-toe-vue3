@@ -45,8 +45,8 @@ watch(dimension, () => {
   startGame();
 });
 
-const isDraft = computed<boolean>(() =>
-  cells.value.every((cell) => cell.value)
+const isDraft = computed<boolean>(
+  () => cells.value.every((cell) => cell.value) && !winner.value
 );
 
 const winner = ref<Player | null>(null);
